@@ -17,7 +17,6 @@ return new class extends Migration
             $table->integer('count')->default(1);
             $table->date('date');
             $table->string('ip');
-            $table->unique(['page', 'date', 'ip']);
             $table->timestamps();
         });
     }

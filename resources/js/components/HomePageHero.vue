@@ -17,9 +17,9 @@ const closeModal = () => (isVideoModalOpen.value = false);
         <div class="mb-4">
             <img src="/images/hero.jpg" alt="" class="block w-full object-cover lg:h-[450px]" />
         </div>
-        <div class="mx-auto mb-10 max-w-7xl p-4 md:p-8 md:py-20">
+        <div class="mx-auto max-w-7xl p-4 md:p-8 md:py-16 ">
             <h1 class="mx-auto mb-6 text-nowrap text-center text-3xl font-black md:text-6xl">About Media Setroom</h1>
-            <p class="mx-auto max-w-2xl text-center leading-relaxed text-gray-500">
+            <p class="mx-auto max-w-2xl text-center dark:text-gray-200 leading-relaxed text-gray-500">
                 Media Setroom LTD is a leading provider of innovative talent solutions and content creation services, focused on supporting socially
                 conscious creators in the public media and podcasting sectors.
             </p>
@@ -65,8 +65,8 @@ const closeModal = () => (isVideoModalOpen.value = false);
                 <div class="grid gap-8 rounded-lg md:grid-cols-2">
                     <div class="space-y-6">
                         <h3 class="text-2xl font-bold text-gray-800 dark:text-white">Amplify Your Content with Our Broadcast Sessions</h3>
-                        <p class="text-gray-600">Our expert team is dedicated to providing top-notch broadcast sessions that promise to:</p>
-                        <ul class="space-y-3 text-gray-700">
+                        <p class="text-gray-600 dark:text-gray-300">Our expert team is dedicated to providing top-notch broadcast sessions that promise to:</p>
+                        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
                             <li class="flex items-center">
                                 <svg class="mr-3 h-5 w-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                                     <path
@@ -152,8 +152,8 @@ const closeModal = () => (isVideoModalOpen.value = false);
                     <div class="space-y-6">
                         <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Promoting Your Page and Content</h2>
                         <p class="text-gray-600 dark:text-white">We're committed to helping you promote your page and content through:</p>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-center">
+                        <ul class="space-y-3  dark:text-gray-300 text-gray-700">
+                            <li class="flex items-center  dark:text-gray-300">
                                 <svg class="mr-3 h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         fillRule="evenodd"
@@ -211,50 +211,50 @@ const closeModal = () => (isVideoModalOpen.value = false);
 
         <div class="mx-auto max-w-6xl p-4 md:p-8 md:py-20">
             <div class="grid items-center gap-12 md:grid-cols-2">
-                <div class="space-y-6">
-                    <h2 class="text-5xl font-bold text-gray-900">How can we work together?</h2>
+            <div class="space-y-6">
+                <h2 class="text-5xl font-bold text-gray-900 dark:text-white">How can we work together?</h2>
 
-                    <p class="text-gray-600">
-                        Every collaboration is tailored to your unique needs, timelines, and goals. We'd love to explore how we can work together to
-                        achieve success.
-                    </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                Every collaboration is tailored to your unique needs, timelines, and goals. We'd love to explore how we can work together to
+                achieve success.
+                </p>
 
-                    <p class="text-gray-600">
-                        With a deep understanding that every engagement is unique, we're open to negotiating rates and tailoring our services to meet
-                        your specific needs.
-                    </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                With a deep understanding that every engagement is unique, we're open to negotiating rates and tailoring our services to meet
+                your specific needs.
+                </p>
 
-                    <Link
-                        :href="route('contact')"
-                        class="inline-block rounded-md bg-black px-6 py-3 font-bold text-white transition-colors hover:bg-gray-800"
-                        prefetch
-                    >
-                        BOOK CONSULTATION
-                    </Link>
+                <Link
+                :href="route('contact')"
+                class="inline-block rounded-md bg-black px-6 py-3 font-bold text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+                prefetch
+                >
+                BOOK CONSULTATION
+                </Link>
 
-                    <div class="pt-8">
-                        <h2 class="mb-4 text-2xl font-semibold text-gray-900">Office Hours</h2>
-                        <p class="text-gray-600">Monday - Friday: 9AM - 6PM</p>
-                    </div>
-
-                    <div class="pt-4">
-                        <h2 class="mb-4 text-2xl font-semibold text-gray-900">Contact</h2>
-                        <p class="text-gray-600">info@mediastroom.com</p>
-                        <p class="text-gray-600">+234 707 683 8162</p>
-                    </div>
+                <div class="pt-8">
+                <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Office Hours</h2>
+                <p class="text-gray-600 dark:text-gray-300">Monday - Friday: 9AM - 6PM</p>
                 </div>
 
-                <div class="relative">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <img src="/images/promotion.jpg" alt="Meeting Room" class="rounded-lg object-cover shadow-lg" />
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <button @click="isVideoModalOpen = true" class="rounded-full bg-white p-4 shadow-lg transition-colors hover:bg-gray-100">
-                                <LucidePlay />
-                            </button>
-                        </div>
-                    </div>
+                <div class="pt-4">
+                <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Contact</h2>
+                <p class="text-gray-600 dark:text-gray-300">info@mediastroom.com</p>
+                <p class="text-gray-600 dark:text-gray-300">+234 707 683 8162</p>
                 </div>
-                <VideoContainer :isOpen="isVideoModalOpen" :close="closeModal" />
+            </div>
+
+            <div class="relative">
+                <div class="aspect-w-16 aspect-h-9">
+                <img src="/images/promotion.jpg" alt="Meeting Room" class="rounded-lg object-cover shadow-lg" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button @click="isVideoModalOpen = true" class="rounded-full bg-white p-4 shadow-lg transition-colors hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <LucidePlay class="dark:text-white" />
+                    </button>
+                </div>
+                </div>
+            </div>
+            <VideoContainer :isOpen="isVideoModalOpen" :close="closeModal" />
             </div>
         </div>
     </main>

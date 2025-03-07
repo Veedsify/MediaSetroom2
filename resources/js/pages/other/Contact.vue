@@ -87,19 +87,19 @@ onMounted(() => {
             </div>
         </nav>
     </header>
-    <div class="bg-gray-50 py-16 sm:py-24">
+    <div class="bg-gray-50 py-16 dark:bg-black sm:py-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <!-- Header Section -->
             <div class="mx-auto mb-16 max-w-2xl text-center">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get in Touch</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Have questions or want to collaborate? We'd love to hear from you.</p>
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Get in Touch</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">Have questions or want to collaborate? We'd love to hear from you.</p>
             </div>
 
             <!-- Main Content -->
             <div class="mx-auto max-w-6xl">
                 <div class="mb-8">
-                    <h2 class="mb-4 text-2xl font-semibold text-gray-900">Let's work together</h2>
-                    <p class="max-w-md leading-relaxed text-gray-600">
+                    <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">Let's work together</h2>
+                    <p class="max-w-md leading-relaxed text-gray-600 dark:text-gray-400">
                         We're here to help! Send us a message and we'll get back to you within 24 hours.
                     </p>
                 </div>
@@ -109,14 +109,14 @@ onMounted(() => {
                         <div class="space-y-8">
                             <div class="space-y-6">
                                 <div class="flex items-center gap-x-4">
-                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100">
+                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke-width="1.5"
                                             stroke="currentColor"
-                                            class="h-6 w-6 text-slate-600"
+                                            class="h-6 w-6 text-slate-600 dark:text-slate-400"
                                         >
                                             <path
                                                 stroke-linecap="round"
@@ -126,20 +126,20 @@ onMounted(() => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="font-semibold text-gray-900">Email</h3>
-                                        <p class="mt-1 text-gray-600">info@mediasetroom.com</p>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">Email</h3>
+                                        <p class="mt-1 text-gray-600 dark:text-gray-400">info@mediasetroom.com</p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-center gap-x-4">
-                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100">
+                                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke-width="1.5"
                                             stroke="currentColor"
-                                            class="h-6 w-6 text-slate-600"
+                                            class="h-6 w-6 text-slate-600 dark:text-slate-400"
                                         >
                                             <path
                                                 stroke-linecap="round"
@@ -149,8 +149,8 @@ onMounted(() => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="font-semibold text-gray-900">Phone</h3>
-                                        <p class="mt-1 text-gray-600">+234 707 683 8162</p>
+                                        <h3 class="font-semibold text-gray-900 dark:text-white">Phone</h3>
+                                        <p class="mt-1 text-gray-600 dark:text-gray-400">+234 707 683 8162</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,49 +161,49 @@ onMounted(() => {
                     <form class="order-first space-y-8 lg:order-last" @submit.prevent="submit">
                         <div class="space-y-6">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700">Full name</label>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full name</label>
                                 <input
                                     v-model="form.name"
                                     type="text"
                                     required
                                     id="name"
-                                    class="mt-2 block w-full rounded-md border border-gray-300 p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+                                    class="mt-2 block w-full rounded-md border border-gray-300 bg-white p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 dark:border-gray-600 dark:bg-black dark:text-white dark:focus:border-slate-400 dark:focus:ring-slate-400 sm:text-sm"
                                 />
                                 <InputError :message="form.errors.name" />
                             </div>
 
                             <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email Address</label>
                                 <input
                                     v-model="form.email"
                                     type="email"
                                     required
                                     id="email"
-                                    class="mt-2 block w-full rounded-md border border-gray-300 p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+                                    class="mt-2 block w-full rounded-md border border-gray-300 bg-white p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 dark:border-gray-600 dark:bg-black dark:text-white dark:focus:border-slate-400 dark:focus:ring-slate-400 sm:text-sm"
                                 />
                                 <InputError :message="form.errors.email" />
                             </div>
 
                             <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone</label>
                                 <input
                                     v-model="form.phone"
                                     type="tel"
                                     required
                                     id="phone"
-                                    class="mt-2 block w-full rounded-md border border-gray-300 p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+                                    class="mt-2 block w-full rounded-md border border-gray-300 bg-white p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 dark:border-gray-600 dark:bg-black dark:text-white dark:focus:border-slate-400 dark:focus:ring-slate-400 sm:text-sm"
                                 />
                                 <InputError :message="form.errors.phone" />
                             </div>
 
                             <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
                                 <textarea
                                     required
                                     id="message"
                                     v-model="form.message"
                                     rows="4"
-                                    class="mt-2 block w-full rounded-md border border-gray-300 p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 sm:text-sm"
+                                    class="mt-2 block w-full rounded-md border border-gray-300 bg-white p-4 shadow-sm focus:border-slate-500 focus:ring-slate-500 dark:border-gray-600 dark:bg-black dark:text-white dark:focus:border-slate-400 dark:focus:ring-slate-400 sm:text-sm"
                                 ></textarea>
                                 <InputError :message="form.errors.message" />
                             </div>
@@ -211,7 +211,7 @@ onMounted(() => {
 
                         <button
                             type="submit"
-                            class="w-full rounded-md bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition duration-200 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+                            class="w-full rounded-md bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition duration-200 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 dark:bg-white  dark:text-black dark:hover:bg-slate-600 dark:focus:ring-slate-400"
                         >
                             Send message
                         </button>
